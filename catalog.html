@@ -7,32 +7,32 @@
   <body>
    
     <div class="wrapper">
+     
       <header class="main-header">
-      <div class="container">
-        <div>
-          <a href="#"><img src="img/vector-smart-object.png" width="139" height="56" alt="Nerds"></a>
+        <div class="container">
+          <div class="main-navigation-logo">
+            <a href="#"><img src="img/vector-smart-object.png" width="139" height="56" alt="Nerds"></a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li class="item-active">
+                <a href="#">Студия</a>
+              </li>
+              <li class="item-active">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="item-active">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="item-active">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-navigation-basket">
+            <a href="#">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <i class="#"></i>
-          <a href="#">Корзина</a>
-        </div>
-      </div>
     </header>
 
       <main class="container">
@@ -46,14 +46,18 @@
           <div class="sidebar-size">
             <h2>Стоимость</h2>
             <div>
-              <!--Пока не знаю как обозначить этот раздел, как вообще ползунок называется и как его реализовать?-->
+              <input type="range" min="0" max="15000" step="1" value="">
             </div> 
             <div>
               <form action="#" method="post">
-                <label for="title">От</label>
-                <input type="text" name="size" id="size-field" value="0">
-                <label for="title">До</label> 
-                <input type="text" name="size" id="size-field" value="15000">
+                <div class="size-form-1">
+                  <label for="title">От</label>
+                  <input type="text" name="size" id="size-field" value="0">
+                </div>
+                <div class="size-form-2">
+                  <label for="title">До</label> 
+                  <input type="text" name="size" id="size-field" value="15000">
+                </div>
               </form>
             </div>
           </div>
@@ -61,28 +65,44 @@
           <div class="sidebar-grid">
             <h2>Сетка</h2>
             <form action="#" method="post">
-              <input type="radio" name="subscribe" value="adaptive" checked>
-              <label for="subscribe-field">Адаптивная</label>
-              <input type="radio" name="subscribe" value="fixed">
-              <label for="subscribe-field">Фиксированная</label>
-              <input type="radio" name="subscribe" value="rubber">
-              <label for="subscribe-field">Резиновая</label>
+              <div class="grid-form-1">
+                <input type="radio" name="subscribe" value="adaptive" checked>
+                <label for="subscribe-field">Адаптивная</label>
+              </div>
+              <div class="grid-form-2">
+                <input type="radio" name="subscribe" value="fixed">
+                <label for="subscribe-field">Фиксированная</label>
+              </div>
+              <div class="grid-form-3">
+                <input type="radio" name="subscribe" value="rubber">
+                <label for="subscribe-field">Резиновая</label>
+              </div>
             </form>
           </div>
           
           <div class="sidebar-features">
             <h2>Особенности</h2>
             <form action="#" method="post">
-              <input type="checkbox" name="subscribe" value="1" checked>
-              <label for="subscribe-field">Слайдер</label>
-              <input type="checkbox" name="subscribe" value="2" >
-              <label for="subscribe-field">Блок преимуществ</label>
-              <input type="checkbox" name="subscribe" value="3" checked>
-              <label for="subscribe-field">Новости</label>
-              <input type="checkbox" name="subscribe" value="4" >
-              <label for="subscribe-field">Галерея</label>
-              <input type="checkbox" name="subscribe" value="5" >
-              <label for="subscribe-field">Корзина</label>
+              <div class="features-form-1">
+                <input type="checkbox" name="subscribe" value="1" checked>
+                <label for="subscribe-field">Слайдер</label>
+              </div>
+              <div class="features-form-2">
+                <input type="checkbox" name="subscribe" value="2" >
+                <label for="subscribe-field">Блок преимуществ</label>
+              </div>
+              <div class="features-form-3">
+                <input type="checkbox" name="subscribe" value="3" checked>
+                <label for="subscribe-field">Новости</label>
+              </div>
+              <div class="features-form-4">
+                <input type="checkbox" name="subscribe" value="4" >
+                <label for="subscribe-field">Галерея</label>
+              </div>
+              <div class="features-form-5">
+                <input type="checkbox" name="subscribe" value="5" >
+                <label for="subscribe-field">Корзина</label>
+              </div>
             </form>
           </div>
           
@@ -95,13 +115,15 @@
         <div class="container-content">
          
           <div class="content-sort">
-            <div class="sort-style">
-              <b>Сортировать:</b>
-              <p>По цене</p>
-              <p>По типу</p>
-              <p>По фунционалу</p>
+            <div class="main-sort">
+              <ul>
+                <li class="item-active">Сортировать:</li>
+                <li class="item-active">По цене</li>
+                <li class="item-active">По типу</li>
+                <li class="item-active">По фунционалу</li>
+              </ul>
             </div>
-            <div>
+            <div class="arrow-sort">
               <i class="#"></i>
               <i class="#"></i>
             </div>
@@ -109,32 +131,32 @@
           
           <div class="content-gallery">
             <ul>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-1">
  			    </a>
               </li>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-2">
  			    </a>
               </li>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-3">
  			    </a>
               </li>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-4">
  			    </a>
               </li>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-5">
  			    </a>
               </li>
-              <li>
+              <li class="item-active">
                 <a href="#">
  			      <img src="#" alt="картинка-6">
  			    </a>
@@ -143,21 +165,52 @@
           </div>
           
           <div class="content-switch">
-            <input class="content-switch-button-1" type="button" name="button-1" value="1">
-            <input class="content-switch-button-2" type="button" name="button-2" value="2">
-            <input class="content-switch-button-3" type="button" name="button-3" value="3">
-            <input class="content-switch-button-4" type="button" name="button-4" value="Следующая">
+            <ul >
+              <li class="item-active">
+                <p class="style-switch-1">1</p>
+              </li>
+              <li class="item-active">
+                <a class="style-switch-2" href="#">2</a>
+              </li >
+              <li class="item-active">
+                <a class="style-switch-2" href="#">3</a>
+              </li>
+              <li class="item-active">
+                <a class="style-switch-3" href="#">Следующая</a>
+              </li>
+            </ul>
           </div>
           
+        </div>
+        
+        <div class="map-container">
+          <div class="map-info">
+            <h3>Nerds design studio</h3>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тель. +7(812)275-75-75</p>
+            <a class="map-button" href="#">Напишите нам</a>
+          </div>
+          <div>
+            <img src="img/vector-smart-object-map.png" width="92" height="37">
+            <img src="img/stiker-map.png" width="231" height="190">
+          </div>
         </div> 
       
       </main>
          
       <footer class="main-footer">
-        <div class="footer-social-icons">
-          <img src="img/shape-icon.png" width="63" height="63">
-          <img src="img/shape-icon.png" width="63" height="63">
-          <img src="img/shape-icon.png" width="63" height="63">
+        <div class="footer-social">
+          <ul>
+            <li class="item-active">
+              <a class="social-vk" href="#"></a>
+            </li>
+            <li class="item-active">
+              <a class="social-fb" href="#"></a>
+            </li >
+            <li class="item-active">
+              <a class="social-instagram" href="#"></a>
+            </li>
+          </ul>
         </div>
         <div class="footer-text">
           <h2>Давайте дружить, это выгодно!</h2>
