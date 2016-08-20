@@ -28,3 +28,122 @@ h3 {
   font-family: "PT Sans", sans-serif; 
   text-transform: uppercase
 }
+
+.wrapper {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.outline {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.outline-column {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.main-slider {
+  height: 450px;
+}
+
+.main-slider-blok1 {
+  float: left;
+}
+
+.main-slider-blok2 {
+  float: right
+}
+
+.main-slider-switches {
+  clear: both;
+}
+
+.services-container {
+  clear: both;
+  height: 320px;
+  
+}
+
+.services-column1 {
+  float: left;
+  width: 230px;
+  margin-right: 20px;
+}
+
+.services-column2 {
+  float: left;
+  width: 230px;
+  margin-left: 5px;
+}
+
+.services-column3 {
+  float: right;
+  width: 230px;
+}
+
+.info-container {
+  clear: both;
+  height: 350px;
+}
+
+.info-column1 {
+  float: left;
+  clear: both;
+  width: 500px;
+}
+
+.info-column2 {
+  float: right;
+}
+
+.logo-container {
+  clear: both;
+}
+
+.container {
+  clear: both;
+}
+
+.container-sidebar {
+  float: left;
+  width: 220px;
+  min-height: 1000px;
+}
+
+.container-content {
+  float: right;
+  width: 600px;
+}
+
+.map-container {
+  clear: both;
+  height: 240px;
+}
+
+.map-info {
+  float: left;
+  width: 300px;
+}
+
+.map-stiker {
+  float: right;
+}
+
+.main-footer {
+  height: 200px;
+}
+
+.footer-social {
+  float: left;
+  width: 200px;
+}
+
+.footer-text {
+  float: left;
+}
