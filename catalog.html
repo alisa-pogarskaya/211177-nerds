@@ -9,10 +9,10 @@
    
     <div class="wrapper">
      
-      <header class="main-header outline">
+      <header class="main-header">
         <div class="container">
           <div class="main-navigation-logo">
-            <a href="#"><img src="img/vector-smart-object.png" width="139" height="56" alt="Nerds"></a>
+            <a href="index.html"><img src="img/vector-smart-object.png" alt="Nёrds" width="139" height="56"></a>
           </div>
           <nav class="main-navigation">
             <ul>
@@ -23,7 +23,8 @@
                 <a href="#">Клиенты</a>
               </li>
               <li class="item-active">
-                <a href="#">Магазин</a>
+                <a class="main-navigation-active">Магазин</a>
+                <div class="navigation-active"></div>
               </li>
               <li class="item-active">
                 <a href="#">Контакты</a>
@@ -31,22 +32,26 @@
             </ul>
           </nav>
           <div class="main-navigation-basket">
-            <a href="#">Корзина</a>
+            <a class="basket" href="#"><span class="icon-basket"></span>Корзина</a>
           </div>
         </div>
     </header>
 
-      <main class="container outline">
+    <main class="main-container">
        
-        <div class="main-title outline-column">
-          <h1>Добро пожаловать в магазин готовых макетов</h1>   
+      <div class="main-title">
+        <div class="container">
+          <h1 class="main-text">Добро пожаловать в магазин <br>готовых макетов</h1>   
         </div>
-     
-        <div class="container-sidebar outline-column">
+      </div>
+        
+    <div class="container">
+      <div class="container-sidebar outline">
          
-          <div class="sidebar-size">
-            <h2>Стоимость</h2>
-            <div>
+          <h2 class="sidebar-size-title">Стоимость</h2>
+           <div class="sidebar-size outline">
+            
+            <div class="sidebar-size-range">
               <input type="range" min="0" max="15000" step="1" value="">
             </div> 
             <div>
@@ -63,8 +68,8 @@
             </div>
           </div>
           
-          <div class="sidebar-grid">
-            <h2>Сетка</h2>
+          <div class="sidebar-grid outline">
+            <h2 class="sidebar-size-title">Сетка</h2>
             <form action="#" method="post">
               <div class="grid-form-1">
                 <input type="radio" name="subscribe" value="adaptive" checked>
@@ -81,8 +86,8 @@
             </form>
           </div>
           
-          <div class="sidebar-features">
-            <h2>Особенности</h2>
+          <div class="sidebar-features outline">
+            <h2 class="sidebar-size-title">Особенности</h2>
             <form action="#" method="post">
               <div class="features-form-1">
                 <input type="checkbox" name="subscribe" value="1" checked>
@@ -108,118 +113,102 @@
           </div>
           
           <div class="sidebar-input">
-            <input class="" type="button" name="button" value="Показать">
+            <input type="button" name="button" value="Показать">
           </div>
           
         </div>
 
-        <div class="container-content outline-column">
+        <div class="container-content outline">
          
-          <div class="content-sort ">
+          <div class="content-sort">
             <div class="main-sort">
               <ul>
-                <li class="item-active">Сортировать:</li>
-                <li class="item-active">По цене</li>
-                <li class="item-active">По типу</li>
-                <li class="item-active">По фунционалу</li>
+                <li class="item-active-sort">Сортировать:</li>
+                <li class="item-active-sort"><a class="">По цене</a></li>
+                <li class="item-active-sort">По типу</li>
+                <li class="item-active-sort">По фунционалу</li>
+                <li class="item-active-sort">
+                <span class="icon-down-dir"></span>
+                <span class="icon-up-dir"></span></li>
               </ul>
-            </div>
-            <div class="arrow-sort">
-              <i class="#"></i>
-              <i class="#"></i>
+              <div class="arrow-sort">
+                
+              </div>
             </div>
           </div>
           
           <div class="content-gallery">
-            <ul>
-              <li class="item-active">
-                <a href="#">
+            <ul class="active-gallery">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_1.jpg" alt="aviator">
- 			    </a>
               </li>
-              <li class="item-active">
-                <a href="#">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_2.jpg" alt="sunset">
- 			    </a>
               </li>
-              <li class="item-active">
-                <a href="#">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_3.jpg" alt="forte">
- 			    </a>
               </li>
-              <li class="item-active">
-                <a href="#">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_4.jpg" alt="modern organic thai">
- 			    </a>
               </li>
-              <li class="item-active">
-                <a href="#">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_5.jpg" alt="avenue">
- 			    </a>
               </li>
-              <li class="item-active">
-                <a href="#">
+              <li class="item-active-gallery">
+                  <img class="header_image_gallery" src="img/header_image_gallery_active.jpg" >
  			      <img src="img/image_gallery_6.jpg" alt="dovetail">
- 			    </a>
               </li>
             </ul>
           </div>
           
           <div class="content-switch">
-            <ul >
-              <li class="item-active">
-                <a class="style-switch-1">1</a>
-              </li>
-              <li class="item-active">
-                <a class="style-switch-2" href="#">2</a>
-              </li >
-              <li class="item-active">
-                <a class="style-switch-2" href="#">3</a>
-              </li>
-              <li class="item-active">
-                <a class="style-switch-3" href="#">Следующая</a>
-              </li>
-            </ul>
+               <ul class="content-switch-item">
+                 <li class="switch-item"><a>1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                 <li><a href="#">Следующая</a></li>
+               </ul>  
           </div>
           
         </div>
         
-        <div class="map-container outline-column">
-          <div class="map-info outline-column">
-            <h3>Nerds design studio</h3>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p>тель. +7(812)275-75-75</p>
+      </div>
+         
+    </main>
+        
+      <div class="map-container">
+        <div class="container">
+          <div class="map-info">
+            <h3 class="map-info-title">Nёrds design studio</h3>
+            <p class="map-info-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="map-info-text">тел. +7(812)275-75-75</p>
             <a class="map-button" href="#">Напишите нам</a>
           </div>
-          <div class="map-stiker outline-column">
-            <img src="img/vector-smart-object-map.png" width="92" height="37">
+          <div class="map-stiker">
+            <img class="map-stiker-logo" src="img/vector-smart-object-map.png" alt="Nёrds" width="92" height="37">
             <img src="img/stiker-map.png" width="231" height="190">
           </div>
-        </div> 
-      
-      </main>
-         
-      <footer class="main-footer outline">
-        <div class="footer-social outline-column">
-          <ul>
-            <li class="item-active">
-              <a class="social-vk" href="#"></a>
-            </li>
-            <li class="item-active">
-              <a class="social-fb" href="#"></a>
-            </li >
-            <li class="item-active">
-              <a class="social-instagram" href="#"></a>
-            </li>
-          </ul>
         </div>
-        <div class="footer-text outline-column">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div> 
+        
+      <footer class="main-footer">
+       <div class="container">
+        <div class="footer-social">
+              <a class="social-btn" href="#"><span class="icon-vk"></span></a>
+              <a class="social-btn social-fb" href="#"><span class="icon-facebook"></span></a>
+              <a class="social-btn social-instagram" href="#"><span class="icon-twitter"></span></a>
+        </div>
+        <div class="footer-text">
+          <h2 class="footer-text-title">Давайте дружить, это выгодно!</h2>
+          <p class="footer-text-title-2">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         </div>
       </footer>
-      
     </div>
-
   </body>
 </html>
