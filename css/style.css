@@ -53,7 +53,6 @@ h1 {
   color: black;
   font-weight: normal;
   font-family: "Roboto medium", sans-serif;
-  
 }
 
 h2 {
@@ -100,14 +99,11 @@ hr {
 
 /* ----- шапка ----- */
 
-
-
 .main-header {
   min-height: 83px;
   margin-bottom: 0px;
   color: #000000;
   background-color: #eeeeee;
-  
 }
 
 .main-navigation-logo {
@@ -334,7 +330,7 @@ hr {
 
 .main-sort li {
   font-size: 12px;
-  padding: 0px 20px 20px 0px;
+  padding: 0px 40px 20px 0px;
 }
 
 .item-active-sort {
@@ -344,47 +340,51 @@ hr {
 }
 
 .icon-down-dir {
-  margin: 0px;
-  padding: 0px;
-  font-size: 15px;
+   display: block;
+  font-size: 23px;
 }
 
 .icon-up-dir {
-  font-size: 15px;
+  display: block;
+  font-size: 23px;
 }
 
-.content-gallery ul {
+.content-gallery .active-gallery {
   padding: 0px;
   margin: 0px;
 }
 
-.item-active-gallery:nth-child (2n) {
-  margin-right: 0px;
+.content-gallery .item-active-gallery img {
+  width: 240px;
+  margin-left: 30px;
 }
 
-.item-active-gallery {
-  position: relative;
-  display: inline-block;
-  margin-right: 38px;
-  margin-bottom: 80px;
-  padding-top: 30px;
-}
-
-.item-active-gallery .header_image_gallery {
+.content-gallery .header_image_gallery {
   position: absolute;
   top: 0px;
   opacity: 0.1;
 }
 
-.item-active-gallery .header_image_gallery:link {
+.content-gallery .item-active-gallery img:nth-child (odd) {
+  margin-left: 0px;
+}
+
+.item-active-gallery {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 80px;
+  padding-top: 30px;
+}
+
+.content-gallery .item-active-gallery img:link {
   opacity: 0.1;
 }
 
-.item-active-gallery .header_image_gallery:hover {
+.content-gallery .item-active-gallery img:hover {
   opacity: 1;
 }
 
-.item-active-gallery .header_image_gallery:active {
+.content-gallery .item-active-gallery img:active {
   opacity: 1;
 }
 
@@ -403,6 +403,8 @@ hr {
 .content-switch li {
   display: inline-block;
   background-color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  border-radius: 3px;
   margin-right: 10px;
 }
 
@@ -410,14 +412,14 @@ hr {
   text-decoration: none;
   display: block;
   padding: 12px 15px;
-  border-radius: 3px;  /* не работает почему-то скругление :/ */
-  border: 2px solid #f1f1f1;
   font-size: 12px;
   color: #000000;
 }
 
-switch-item a {
-  
+.switch-item {
+  background-color: #ffffff;
+  border: 2px solid #1e1e1e;
+  border-radius: 3px;
 }
 
 /* ----- каталог(end) ----- */
@@ -429,7 +431,6 @@ switch-item a {
   min-height: 354px;
   color: #000000;
   background-color: #eeeeee;
-  
 }
 
 .main-slider-blok1 {
@@ -482,6 +483,7 @@ switch-item a {
 .main-slider-button:active {
   color: #ffffff;
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .main-slider-switches {
@@ -590,6 +592,7 @@ switch-item a {
 .services-column-input-red:active {
   color: #ffffff;
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .services-column2 {
@@ -626,6 +629,7 @@ switch-item a {
 .services-column-input-green:active {
   color: #ffffff;
   background-color: #009053;
+  box-shadow: inset 0 3px 0 0 #007b47;
 }
 
 .services-column3 {
@@ -661,6 +665,7 @@ switch-item a {
 .services-column-input-yellow:active {
   color: #ffffff;
   background-color: #c09b24;
+  box-shadow: inset 0 3px 0 0 #a3841f;
 }
 
 /* ----- Информация ----- */
@@ -693,9 +698,10 @@ switch-item a {
   margin-top: 40px;
 }
 
-.info-column1-blok-2 {
-  
+.info-column1-blok-2 li {
+  list-style: none;
 }
+
 .info-column1-list {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -877,6 +883,7 @@ switch-item a {
 .map-button:active {
   color: #ffffff;
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .map-stiker {
@@ -959,6 +966,7 @@ switch-item a {
 
 .footer-social .social-btn:active {
   background-color: #d6494d;
+  box-shadow: inset 0 3px 0 0 #b63e42;
 }
 
 .footer-text {
