@@ -259,10 +259,13 @@ hr {
 .sidebar-size-title {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-size: 18px;
   text-transform: uppercase;
 }
+
+
+
 
 .sidebar-size {
   margin-bottom: 50px;
@@ -270,6 +273,9 @@ hr {
 }
 
 .sidebar-size-range {
+  height: 80px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
@@ -281,11 +287,38 @@ hr {
   text-transform: uppercase;
 }
 
+
+
+
 .sidebar-grid {
+  height: 139px;
   margin-bottom: 50px;
 }
 
+.grid-form-1 {
+  margin-bottom: 15px;
+}
+
+.grid-form-1 input {
+  position: relative;
+}
+
+.grid-form-1 input:before {
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  content: "\25cb";
+}
+
+
+.grid-form-2 {
+  margin-bottom: 15px;
+}
+
 .sidebar-features {
+  height: 218px;
   margin-bottom: 58px;
 }
 
@@ -295,7 +328,7 @@ hr {
 }
 
 .sidebar-input input {
-  padding: 13px 34px;
+  padding: 12px 44px;
   background-color: #f1f1f1;
   border-radius: 3px;
   border: none;
@@ -303,7 +336,22 @@ hr {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
-  
+}
+
+.sidebar-input input:link {
+  color: #000000;
+  background-color: #f1f1f1;
+}
+
+.sidebar-input input:hover {
+  color: #000000;
+  background-color: #e5e5e5;
+}
+
+.sidebar-input input:active {
+  color: #000000;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 /* - галерея - */
@@ -321,32 +369,90 @@ hr {
   text-transform: uppercase;
 }
 
+.main-sort {
+  float: left;
+}
+
 .main-sort ul {
-  list-style: none;
   margin: 0px;
   padding: 0px;
   font-size: 0px;
 }
 
 .main-sort li {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
   font-size: 12px;
   padding: 0px 40px 20px 0px;
 }
 
-.item-active-sort {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
+.item-active-sort a {
+  border-bottom: 1px dotted #00ca74;
+  text-decoration: none;
+  color: #d5d5d5;
+}
+
+.item-active-sort a:link {
+  border-bottom: 1px dotted #00ca74;
+  text-decoration: none;
+  color: #d5d5d5;
+}
+
+.item-active-sort a:hover {
+  color: black;
+  border-bottom: 1px solid #00ca74;
+  text-decoration: none;
+}
+
+.item-active-sort a:active {
+  color: black;
+  border-bottom: none;
+}
+
+.arrow-sort {
+  float: right;
+  position: relative;
 }
 
 .icon-down-dir {
-   display: block;
+  position: absolute;
+  top: -5px;
+  left: -39px;
   font-size: 23px;
+  color: #c1c1c1;
+}
+
+.icon-down-dir:link {
+  color: #c1c1c1;
+}
+
+.icon-down-dir:hover {
+  color: #000000;
+}
+
+.icon-down-dir:active {
+  color: #00ca74;
 }
 
 .icon-up-dir {
-  display: block;
+  position: absolute;
+  top: -5px;
+  left: -22px;
   font-size: 23px;
+  color: #c1c1c1;
+}
+
+.icon-up-dir:link {
+  color: #c1c1c1;
+}
+
+.icon-up-dir:hover {
+  color: #000000;
+}
+
+.icon-up-dir:active {
+  color: #00ca74;
 }
 
 .content-gallery .active-gallery {
@@ -354,9 +460,9 @@ hr {
   margin: 0px;
 }
 
-.content-gallery .item-active-gallery img {
+.content-gallery .item-active-gallery {
   width: 240px;
-  margin-left: 30px;
+  margin-left: 75px;
 }
 
 .content-gallery .header_image_gallery {
@@ -365,7 +471,7 @@ hr {
   opacity: 0.1;
 }
 
-.content-gallery .item-active-gallery img:nth-child (odd) {
+.content-gallery .item-active-gallery:nth-child(odd) {
   margin-left: 0px;
 }
 
@@ -393,7 +499,7 @@ hr {
   width: 300px;
 }
 
-.content-switch ul {
+.content-switch-item {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -403,23 +509,39 @@ hr {
 .content-switch li {
   display: inline-block;
   background-color: #f1f1f1;
-  border: 2px solid #f1f1f1;
   border-radius: 3px;
   margin-right: 10px;
+}
+
+.content-switch li:link {
+  color: #ffffff;
+  background-color: #f1f1f1;
+}
+
+.content-switch li:hover {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
+.content-switch li:active {
+  color: #ffffff;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 .content-switch a {
   text-decoration: none;
   display: block;
-  padding: 12px 15px;
+  padding: 14px 17px;
   font-size: 12px;
   color: #000000;
 }
 
-.switch-item {
+.content-switch .switch-item {
   background-color: #ffffff;
-  border: 2px solid #1e1e1e;
+  box-shadow: inset 0 0 0 2px #f2f2f2;
   border-radius: 3px;
+  padding: 0px 0px;
 }
 
 /* ----- каталог(end) ----- */
